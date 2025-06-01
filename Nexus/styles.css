@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b2b2b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Cor de fundo transparente */
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    display: block; /* Remove comportamentos inline */
+    max-height: 60px; /* Ajusta altura máxima */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    width: 77px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600px;
+    height: 50px;
+    background-color: #2b2b2b; /* Cor de fundo padrão */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #535252; /* Tom mais claro de roxo no hover */
+    color: white; /* Mantém o texto branco no hover */
+}
+
+main {
+    padding: 100px 20px;
+}
+
+section {
+    height: 1500px; /* Apenas para adicionar espaço para rolar */
+}
+
+.scrolled {
+    background-color: #2b2b2b;
+}
+
+h1 {
+    margin-top: 200px;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 300px;
+}
+
+.custom-paragraph {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 44px;
+    margin-left: 300px;
+    color: #ffffff;
+}
+
+main {
+    background-image: url('images/banner-bg.jpg');
+    background-size: 100%;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    border-bottom-left-radius: 200px; /* Arredonda a borda inferior esquerda */
+    border-bottom-right-radius: 200px; /* Arredonda a borda inferior direita */
+    overflow: hidden; /* Para evitar que o conteúdo "vaze" da div */
+    max-height: 1000px;
+}
+
+p {
+    color: #ffffff;
+    margin-left: 300px;
+}
+
+footer {
+    background-color: #2b2b2b;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Faz com que os elementos quebrem a linha, se necessário */
+    margin-bottom: 20px; /* Espaço entre o container e a próxima div */
+    width: 1500px; /* Garante que ocupe toda a largura */
+    text-align: center; /* Centraliza o texto dentro dos elementos, se necessário */ 
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 20vh;
+}
+
+.square {
+    width: 300px; /* Largura do quadrado */
+    height: 230px; /* Altura do quadrado */
+    background-color: #ffffff; /* Cor de fundo do quadrado */
+    border-radius: 20px; /* Bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.image-container {
+    width: 90px; /* Largura da imagem */
+    height: 90px; /* Altura da imagem */
+    background-color: #161616; /* Fundo cinza da imagem */
+    border-radius: 50%; /* Bordas da imagem em forma de círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; /* Transição suave para a troca de cor */
+}
+
+.round-image {
+    width: 40px; /* Largura da imagem redonda */
+    height: 40px; /* Altura da imagem redonda */
+    border-radius: 50%; /* Bordas da imagem em forma de círculo */
+}
+
+.image-container:hover {
+    background-color: #9B59B6; /* Cor roxa ao passar o mouse */
+}
+
+.custom-menu-text {
+    margin-top: 10px; /* Espaçamento acima do texto */
+    color: #9B59B6; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+.faq-container {
+    display: block;
+    width: 1250px;
+    clear: both; /* Garante que o FAQ fique abaixo de qualquer float */
+    margin-top: 20px; /* Adiciona um espaçamento entre o FAQ e o conteúdo acima */
+    margin-left: 50px;
+}
+
+.faq {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+
+.faq-question .plus {
+    margin-right: 10px;
+    font-size: 25px;
+    color: #6029c2;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.faq.open .faq-answer {
+    display: block;
+}
+
+.faq.open .plus {
+    transform: rotate(45deg);
+    color: #ff0000;
+}
+
+h3 {
+    margin-top: 250px; /* Adiciona um espaçamento entre o FAQ e o conteúdo acima */
+    color: white;
+    font-size: 30px;
+    margin-right: 700px;
+}
+
+h4 {
+    color: white;
+}
+
+.custom-div {
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 150px; /* Defina a altura que preferir */
+    background-color: #363636; /* Fundo vermelho */
+    border-top-left-radius: 150px; /* Arredondamento no canto superior esquerdo */
+    border-top-right-radius: 150px; /* Arredondamento no canto superior direito */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    align-items: center; /* Centraliza verticalmente o texto */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-top: 200px; /* Adiciona um espaçamento entre o FAQ e o conteúdo acima */
+    margin-left: 30px;
+  }
+  
+  

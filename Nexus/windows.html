@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Team AntiLag</title>
+    <link rel="stylesheet" href="windows.css">
+</head>
+<body onload="filterCategory('all')">
+    <header id="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="windows.html">Windows</a></li>
+                <li><a href="#">Suport</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p class="custom-paragraph">Home > Windows</p>
+        </section>
+    </main>
+    <footer>
+        <div class="categories">
+            <button id="all-btn" onclick="filterCategory('all')" class="category-btn active">TODOS</button>
+            <button id="windows11-btn" onclick="filterCategory('windows11')" class="category-btn">WINDOWS 11</button>
+            <button id="windows10-btn" onclick="filterCategory('windows10')" class="category-btn">WINDOWS 10</button>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product windows11" href="https://example.com/windows11lite">
+                <div class="product-image">
+                    <img src="images/Win10.jpg" alt="Windows 11">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Windows 11 Lite</p>
+                    <p class="product-price">Nexus ISO 1.0</p>
+                </div>
+                <div class="small-icon">
+                    <img src="images/Download.png" alt="Ícone pequeno">
+                </div>
+            </div>
+        
+            <div class="product windows10" href="https://example.com/windows10lite">
+                <div class="product-image">
+                    <img src="images/Win10.jpg" alt="Windows 10">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Windows 10 Lite</p>
+                    <p class="product-price">Nexus ISO 1.0</p>
+                </div>
+                <div class="small-icon">
+                    <img src="images/Download.png" alt="Ícone pequeno">
+                </div>
+            </div>
+        
+            <div class="product windows10" href="./win10ML.html">
+                <div class="product-image">
+                    <img src="images/Win10.jpg" alt="Windows 10">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Windows 10 Mega Lite</p>
+                    <p class="product-price">Nexus ISO 1.0</p>
+                </div>
+                <div class="small-icon">
+                    <img src="images/Download.png" alt="Ícone pequeno">
+                </div>
+            </div>
+        
+            <div class="product windows11" href="https://example.com/windows11megalite">
+                <div class="product-image">
+                    <img src="images/Win10.jpg" alt="Windows 11">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Windows 11 Mega Lite</p>
+                    <p class="product-price">Nexus ISO 1.0</p>
+                </div>
+                <div class="small-icon">
+                    <img src="images/Download.png" alt="Ícone pequeno">
+                </div>
+            </div>
+        </div>
+        
+        <div class="custom-div">
+            <h4>Copyright © 2024 All rights reserved.Team AntiLag Company</h4>
+        </div>
+    <script src="script.js"></script>
+    <script src="loja.js"></script>
+    </footer>
+</body>
+</html>
